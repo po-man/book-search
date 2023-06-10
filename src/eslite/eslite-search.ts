@@ -22,7 +22,7 @@ export const esliteSearch = async (query) => {
 
   const { status, data } = await axios.request(options);
   console.log(`[eslite] search, query: ${query}, status: ${status}`);
-  if (status !== 200 || !data?.hits?.hit?.length > 0) {
+  if (status !== 200 || !(data?.hits?.hit?.length > 0)) {
     return null;
   }
 
