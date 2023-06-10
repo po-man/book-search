@@ -1,0 +1,139 @@
+{
+  "id": 2286518,
+  "name": "123: Food超人寶寶學前數字學習遊戲",
+  "manufacturer_date": "2013-11-01T00:00:00.000+08:00",
+  "final_price": 50,
+  "retail_price": 38.0,
+  "product_guid": "1003120582286518",
+  "photos": [
+    {
+      "id": 9019895,
+      "small_path": "https://s2.eslite.dev/unsafe/fit-in/x150/s.eslite.dev/Upload/Product/201311/o/635213100837755370.jpg",
+      "medium_path": "https://s2.eslite.dev/unsafe/fit-in/x375/s.eslite.dev/Upload/Product/201311/o/635213100837755370.jpg",
+      "large_path": "https://s2.eslite.dev/unsafe/fit-in/x900/s.eslite.dev/Upload/Product/201311/o/635213100837755370.jpg",
+      "position": 1,
+      "is_active": true
+    }
+  ],
+  "supplier": "風車圖書出版有限公司",
+  "ship": {
+    "1": "國外",
+    "2": "宅配",
+    "4": "誠品門市取貨",
+    "5": "7-11取貨",
+    "7": "香港取貨",
+    "8": "誠品基金會捐書",
+    "9": "全家取貨",
+    "10": "蝦皮店到店"
+  },
+  "pay": {
+    "2": "信用卡",
+    "3": "ATM",
+    "6": "誠品點",
+    "8": "7-11付款",
+    "13": "蝦皮付款",
+    "14": "eslite pay",
+    "15": "人工收款",
+    "16": "全家付款",
+    "17": "街口支付",
+    "19": "LINE Pay",
+    "21": "Atome"
+  },
+  "installments": [],
+  "auth": "風車編輯群",
+  "descriptions": [
+    {
+      "name": "內容簡介",
+      "product_description_type_id": 2,
+      "description": "<div>1. 豐富的彩色插圖，生動活潑吸引孩子<br/>色彩鮮明的插圖，讓書本更加生動活潑，吸引孩子的學習興趣。<br/>2. 附有數字筆畫的練習與數一數遊戲，讓孩子快樂的學習<br/>有數字1-10的筆畫練習，以及數字數一數的各種遊戲，讓孩子快樂的學習數字與數數。<br/>3. 附有親子互動的獎勵圖案，增進親子之間的溫馨情誼<br/>每一頁遊戲都附有親子互動式的獎勵圖案，當孩子完成練習，別忘了給孩子愛的鼓勵喔！</div>",
+      "photo_path": null
+    },
+    {
+      "name": "作者介紹",
+      "product_description_type_id": 6,
+      "description": "<p><strong>■作者簡介</strong></p><p><strong>風車編輯群</strong></p>",
+      "photo_path": null
+    }
+  ],
+  "product_specifications": [
+    {
+      "name": "25",
+      "tag_name": "頁數",
+      "tag": "pages"
+    },
+    {
+      "name": "有",
+      "tag_name": "注音版",
+      "tag": "phonetic"
+    },
+    {
+      "name": "P:平裝",
+      "tag_name": "裝訂",
+      "tag": "coverType"
+    },
+    {
+      "name": "1:中文/繁體",
+      "tag_name": "語言",
+      "tag": "language"
+    },
+    {
+      "name": "29.6X21CM",
+      "tag_name": "尺寸",
+      "tag": "size"
+    },
+    {
+      "name": "N:無",
+      "tag_name": "級別",
+      "tag": "rating"
+    }
+  ],
+  "relations": [],
+  "sales_warning": [],
+  "author": "風車編輯群",
+  "author_orig": "",
+  "compiler": "",
+  "translator": "",
+  "painter": "",
+  "brand_name": "",
+  "mall_products": false,
+  "sale_mode": null,
+  "sale_mode_text": null,
+  "sale_mode_start_date": null,
+  "sale_mode_end_date": null,
+  "ean": "4714426401728",
+  "mch": "131AABAB4",
+  "eslite_sn": "2680829555004",
+  "stock": 11,
+  "product_button_status": "add_to_shopping_cart",
+  "default_product_photo_id": 9019895,
+  "account_qty_limit": null,
+  "order_qty_limit": null,
+  "short_description": "1. 豐富的彩色插圖，生動活潑吸引孩子<br/>色彩鮮明的插圖，讓書本更加生動活潑，吸引孩子的學習興趣。<br/>2. 附有數字筆畫的練習與數一數遊戲，讓孩子快樂的學習<br/>有數字1-10的筆畫練習，以及數字數一數的各種遊戲，讓孩子快樂的學習數字與數數。<br/>3. 附有親子互動的獎勵圖案，增進親子之間的溫馨情誼<br/>每一頁遊戲都附有親子互動式的獎勵圖案，當孩子完成練習，別忘了給孩子愛的鼓勵喔！",
+  "ver_id": "01",
+  "tags": [],
+  "is_book": true,
+  "product_type": "book",
+  "product_attachments": [],
+  "is_gift": false,
+  "type": "percentage",
+  "range": 75,
+  "promotions": {},
+  "level1": 301,
+  "level2": 352,
+  "level3": 357,
+  "restricted": false,
+  "sub_title": "",
+  "original_name": "",
+  "categories": [357],
+  "activities": [
+    {
+      "name": "-6/14 精明年中慶｜圖書滿1000折100",
+      "link": "https://events.eslite.com/2023/230529-618sale/index.html"
+    }
+  ],
+  "isbn10": "4426401720",
+  "isbn13": "",
+  "least_buy_count_type": null,
+  "least_buy_count_value": null,
+  "is_transfer": false
+}

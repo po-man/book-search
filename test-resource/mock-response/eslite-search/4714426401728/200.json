@@ -1,0 +1,92 @@
+{
+  "facets": {
+    "author": {
+      "buckets": [
+        {
+          "value": "風車編輯群",
+          "count": "1"
+        }
+      ]
+    },
+    "manufacturer": {
+      "buckets": [
+        {
+          "value": "風車圖書出版有限公司",
+          "count": "1"
+        }
+      ]
+    },
+    "categories": {
+      "buckets": [
+        {
+          "value": "357",
+          "count": "1"
+        },
+        {
+          "value": "352",
+          "count": "1"
+        },
+        {
+          "value": "301",
+          "count": "1"
+        }
+      ]
+    }
+  },
+  "hits": {
+    "start": 0,
+    "found": "1",
+    "hit": [
+      {
+        "id": "1003120582286518",
+        "fields": {
+          "discount_type": "",
+          "categories": ["357", "352", "301"],
+          "create_date": "11/21/2013 13:00:52",
+          "status": "add_to_shopping_cart",
+          "name": "123: Food超人寶寶學前數字學習遊戲",
+          "description": "1. 豐富的彩色插圖，生動活潑吸引孩子<br/>色彩鮮明的插圖，讓書本更加生動活潑，吸引孩子的學習興趣。<br/>2. 附有數字筆畫的練習與數一數遊戲，讓孩子快樂的學習<br/>有數字1-10的筆畫練習，以及數字數一數的各種遊戲，讓孩子快樂的學習數字與數數。<br/>3. 附有親子互動的獎勵圖案，增進親子之間的溫馨情誼<br/>每一頁遊戲都附有親子互動式的獎勵圖案，當孩子完成練習，別忘了給孩子愛的鼓勵喔！",
+          "final_price": "38",
+          "mprice": "50",
+          "url": "https://www.eslite.com/product/1003120582286518",
+          "product_photo_url": "/Upload/Product/201311/o/635213100837755370.jpg",
+          "subtitle": "",
+          "restricted": "no",
+          "stock": "11",
+          "discount": "0",
+          "hotcakes": "0",
+          "eslite_sn": "2680829555004",
+          "isbn": "",
+          "isbn10": "4426401720",
+          "ean": "4714426401728",
+          "original_name": "",
+          "sub_title": "",
+          "origin_subtitle": "",
+          "key_word": "Food超人/ 啟發/ 學齡前/練習本",
+          "author": ["風車編輯群"],
+          "author_fuzzy": ["風車編輯群"],
+          "author_for_autocomplete": "風車編輯群",
+          "author_original_name": "",
+          "author_original_name_fuzzy": "",
+          "manufacturer": ["風車圖書出版有限公司"],
+          "manufacturer_fuzzy": ["風車圖書出版有限公司"],
+          "manufacturer_for_autocomplete": "風車圖書出版有限公司",
+          "manufacturer_sn": "10130737",
+          "discount_range": "75",
+          "manufacturer_date": "11/01/2013 00:00:00",
+          "hidden_start_date": "10/26/2020 18:36:13",
+          "hidden_end_date": "12/31/2099 08:00:00",
+          "is_book": "yes",
+          "has_trial": "no",
+          "search_position": "100",
+          "sap_supplier_id": "201070",
+          "editor": "",
+          "translator": "",
+          "illustrator": "",
+          "brand": "",
+          "_ExtendWeight_": "2,0,2013/11/1 上午 12:00:00,110724"
+        }
+      }
+    ]
+  }
+}
