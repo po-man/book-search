@@ -2,7 +2,7 @@
   "name": "@po-man/book-search",
   "version": "0.1.0",
   "description": "",
-  "main": "src/index.js",
+  "exports": "./src/index.js",
   "scripts": {
     "test": "npx jest --testPathPattern=\".*.test.js\"",
     "format": "npx prettier --write ."
