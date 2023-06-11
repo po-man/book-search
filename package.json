@@ -22,7 +22,8 @@
   "homepage": "https://github.com/po-man/book-search#readme",
   "dependencies": {
     "axios": "^1.4.0",
-    "axios-mock-adapter": "^1.21.4"
+    "axios-mock-adapter": "^1.21.4",
+    "cheerio": "^1.0.0-rc.12"
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.22.5",

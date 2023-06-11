@@ -1,0 +1,166 @@
+{
+  "pageNo": 1,
+  "pageSize": 12,
+  "rows": [
+    {
+      "appId": "supnr",
+      "author": "風車編輯群",
+      "barcode": "",
+      "brands": [],
+      "canTry": 0,
+      "cateLevels": [],
+      "categories": "",
+      "categoryIds": ["10210288", "4022958"],
+      "categorys": [
+        {
+          "cateType": "CDB",
+          "code": "A210288",
+          "id": 10210288,
+          "name": "學前圖書 (0-3歲)＼其"
+        },
+        {
+          "cateType": "BOOK",
+          "code": "",
+          "id": 4022958,
+          "name": "幼兒(0-3歲)"
+        }
+      ],
+      "customizeText": "",
+      "ext": {
+        "productHeight": "1.0",
+        "language1": "ZF",
+        "author": "風車編輯群",
+        "isbn": "4714426401728",
+        "chSeriesIsOrg": "0",
+        "authorCode1": "A109854",
+        "pubDate": "2013年12月01日",
+        "netWeight": "1.0",
+        "grossWeight": "1.0",
+        "canTry": "1",
+        "productWidth": "1.0",
+        "publisher": "風車圖書出版有限公司",
+        "productLength": "1.0",
+        "enSeriesIsOrg": "0"
+      },
+      "highlightAuthor": "風車編輯羣",
+      "highlightName": "123——Food超人寶寶學前字母學習遊戲",
+      "highlightPublisher": "風車圖書出版有限公司",
+      "id": "1242695654498746370",
+      "imgList": [],
+      "introduction": "",
+      "isAdd": 0,
+      "isCheckSurplusSaleNum": 0,
+      "isCustomize": 0,
+      "isDiscount": 0,
+      "isIgnore": 0,
+      "isLimitStock": 0,
+      "isNewestBook": 0,
+      "isOldVersion": 0,
+      "isOverseaBuy": 1,
+      "isPackage": "0",
+      "isPresell": 0,
+      "isTop": 0,
+      "isbn": "4714426401728",
+      "language1": "ZF",
+      "limitBuyCodeObj": null,
+      "listPrice": 0,
+      "marketingActivityList": [],
+      "marketingActivityPriceVo": {
+        "activity": null,
+        "discountPrice": 0,
+        "extraData": "",
+        "isSupportMember": 1,
+        "memberPriceList": [
+          {
+            "activity": null,
+            "memberLevel": "EXCELLENT",
+            "relPrice": 1360
+          },
+          {
+            "activity": null,
+            "memberLevel": "PLATINUM",
+            "relPrice": 1360
+          },
+          {
+            "activity": null,
+            "memberLevel": "GOLD",
+            "relPrice": 1530
+          },
+          {
+            "activity": null,
+            "memberLevel": "SILVER",
+            "relPrice": 1620
+          },
+          {
+            "activity": null,
+            "memberLevel": "STANDARD",
+            "relPrice": 1700
+          }
+        ],
+        "originalPrice": 1700,
+        "productId": "1242695654440026113",
+        "relPrice": 0
+      },
+      "mchNum": "MB1",
+      "mchShopName": "一本",
+      "mchShopNum": "MB1",
+      "memberDiscount": null,
+      "name": "123——Food超人寶寶學前字母學習遊戲",
+      "onSaleTime": "2020-03-25 14:11:46",
+      "outOfStock": 0,
+      "presellType": "",
+      "price": 1700,
+      "priceGroupCode": "03",
+      "productId": "1242695654440026113",
+      "productNum": "4714426401728",
+      "productPresell": null,
+      "productSpecialTag": null,
+      "productSpecialTags": [],
+      "productStatus": 1,
+      "pubDate": "2013年12月01日",
+      "publisher": "風車圖書出版有限公司",
+      "saleNum": 0,
+      "saleStatus": 3,
+      "seriesName": "",
+      "skuId": "1242695654469386242",
+      "skuList": [
+        {
+          "barcode": "4714426401728",
+          "createAdminId": 0,
+          "createAdminName": "",
+          "createTime": null,
+          "id": "1242695654469386242",
+          "listPrice": 0,
+          "productId": "1242695654440026113",
+          "skuNum": "",
+          "skuValues": "",
+          "sort": 0,
+          "thumb": "",
+          "updateAdminId": 0,
+          "updateAdminName": "",
+          "updateTime": null
+        }
+      ],
+      "sourceCategories": "E",
+      "sourceType": "cdb",
+      "subTitle": "",
+      "subjectId": "",
+      "subjectIds": [],
+      "subjectInfo": null,
+      "summary": "",
+      "surplusSaleNum": 0,
+      "tagIds": ["1243088576896561153"],
+      "tags": [],
+      "templatePropList": [],
+      "thumb": "https://nrapp-prd.oss-cn-hongkong.aliyuncs.com/L3BpYy8xNTg1Nzk0NTgyMTM2NDcxNDQyNjQwMTcyOC5qcGc",
+      "translator": "",
+      "type": "BOOK",
+      "videoLink": "",
+      "videoLinkText": "",
+      "videoLinkTextEn": "",
+      "weight": 0
+    }
+  ],
+  "sortableFields": [],
+  "total": 1
+}
