@@ -1,13 +1,14 @@
 import axios from 'axios';
+import type { Search } from 'src/types';
 
-export const transformMyBookOneSearchResponse = (data) =>
+export const transformMyBookOneSearchResponse = (data): Search[] =>
   data.rows.map((row) => ({
     name: row?.highlightName,
     url: `https://www.mybookone.com.hk/page/detail_w/${row?.id}/.html`,
     productId: row?.id,
   }));
 
-export const myBookOneSearch = async (query) => {
+export const myBookOneSearch = async (query: string): Promise<Search[]> => {
   const options = {
     method: 'POST',
     url: 'https://api.mybookone.com.hk/api/supnr/search/v1/indexProductSearch',

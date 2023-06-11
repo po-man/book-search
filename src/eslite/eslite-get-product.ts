@@ -1,14 +1,36 @@
 import axios from 'axios';
+import type { Book, Price } from 'src/types';
 
-export const transformEsliteGetProductResponse = (data) => ({
+export const transformEsliteGetProductResponse = (data): Book => ({
   isbn: data?.ean,
   name: data?.name,
-  price: data?.retail_price,
+  author: data?.author,
+  publisher: data?.supplier,
+  prices: [
+    ...((data?.final_price
+      ? [
+          {
+            currency: 'TWD',
+            amount: data.final_price,
+            isDiscounted: false,
+          },
+        ]
+      : []) as Price[]),
+    ...((data?.retail_price
+      ? [
+          {
+            currency: 'TWD',
+            amount: data.retail_price,
+            isDiscounted: true,
+          },
+        ]
+      : []) as Price[]),
+  ],
   description: data?.short_description,
   images: data?.photos?.map((photo) => photo?.large_path),
 });
 
-export const esliteGetProduct = async (productId) => {
+export const esliteGetProduct = async (productId: string): Promise<Book> => {
   const options = {
     method: 'GET',
     url: `https://athena.eslite.com/api/v1/products/${productId}`,
