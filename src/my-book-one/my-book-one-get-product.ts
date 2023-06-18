@@ -2,13 +2,30 @@ import axios from 'axios';
 import * as cheerio from 'cheerio';
 import type { Book, Price } from 'src/types';
 
-export const parseDescription = (html) =>
-  html('p')
-    .map(function () {
-      return html(this).text().trim();
-    })
-    .toArray()
-    .join('\n');
+export const parseDescriptionTrials = [
+  (html) =>
+    html('p')
+      .map(function () {
+        return html(this).text().trim();
+      })
+      .toArray()
+      .join('\n'),
+  (html) =>
+    html('div.text_description_1')
+      .map(function () {
+        return html(this).text().trim();
+      })
+      .toArray()
+      .join('\n'),
+];
+
+export const parseDescription = (html) => {
+  let trial = parseDescriptionTrials[0](html);
+  if (trial === '') {
+    trial = parseDescriptionTrials[1](html);
+  }
+  return trial;
+};
 
 export const transformMyBookOneGetProductResponse = (data): Book => {
   const htmlIntro = cheerio.load(data?.introduction || '');
