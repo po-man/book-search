@@ -14,6 +14,7 @@ export const esliteGetFirstProductPipeline = async (
   if (product === null) {
     return null;
   }
+  product.url = search[0]?.url;
 
   return product;
 };

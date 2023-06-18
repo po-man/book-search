@@ -12,6 +12,7 @@ export type Book = {
   prices?: Price[];
   description?: string;
   images?: string[];
+  url?: string;
 };
 
 export type Price = {
