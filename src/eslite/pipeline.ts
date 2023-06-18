@@ -38,6 +38,7 @@ export const esliteGetFirstPageProductsPipeline = async (
       if (product !== null) {
         products.push(product);
       }
+      product.url = search[0]?.url;
     }
   } else {
     products = await Promise.all(
