@@ -21,7 +21,7 @@ export const esliteGetFirstProductPipeline = async (
 
 export const esliteGetFirstPageProductsPipeline = async (
   keyword: string,
-  options: GetFirstPageProductsPipelineOptions = {},
+  options: GetFirstPageProductsPipelineOptions = {}
 ): Promise<Book[]> => {
   const { getProductOneByOne = true, topK = 5 } = options;
   const search = await esliteSearch(keyword);

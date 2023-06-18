@@ -21,7 +21,7 @@ export const myBookOneGetFirstProductPipeline = async (
 
 export const myBookOneGetFirstPageProductsPipeline = async (
   keyword: string,
-  options: GetFirstPageProductsPipelineOptions = {},
+  options: GetFirstPageProductsPipelineOptions = {}
 ): Promise<Book[]> => {
   const { getProductOneByOne = true, topK = 5 } = options;
   const search = await myBookOneSearch(keyword);
