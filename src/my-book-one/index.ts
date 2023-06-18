@@ -6,4 +6,7 @@ export {
   myBookOneGetProduct,
   transformMyBookOneGetProductResponse,
 } from './my-book-one-get-product';
-export { myBookOneGetFirstProductPipeline } from './pipeline';
+export {
+  myBookOneGetFirstProductPipeline,
+  myBookOneGetFirstPageProductsPipeline,
+} from './pipeline';

@@ -3,4 +3,7 @@ export {
   esliteGetProduct,
   transformEsliteGetProductResponse,
 } from './eslite-get-product';
-export { esliteGetFirstProductPipeline } from './pipeline';
+export {
+  esliteGetFirstProductPipeline,
+  esliteGetFirstPageProductsPipeline,
+} from './pipeline';
