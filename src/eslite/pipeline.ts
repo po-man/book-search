@@ -18,3 +18,30 @@ export const esliteGetFirstProductPipeline = async (
 
   return product;
 };
+
+export const esliteGetFirstPageProductsPipeline = async (
+  keyword: string,
+  getProductOneByOne: boolean = true
+): Promise<Book[]> => {
+  const search = await esliteSearch(keyword);
+  if (search === null || search.length === 0) {
+    return null;
+  }
+
+  let products: Book[] = [];
+
+  if (getProductOneByOne) {
+    for await (const searchHit of search) {
+      const product = await esliteGetProduct(searchHit.productId);
+      if (product !== null) {
+        products.push(product);
+      }
+    }
+  } else {
+    products = await Promise.all(
+      search.map((searchHit) => esliteGetProduct(searchHit.productId))
+    );
+  }
+
+  return products;
+};

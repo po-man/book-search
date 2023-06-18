@@ -18,3 +18,30 @@ export const myBookOneGetFirstProductPipeline = async (
 
   return product;
 };
+
+export const myBookOneGetFirstPageProductsPipeline = async (
+  keyword: string,
+  getProductOneByOne: boolean = true
+): Promise<Book[]> => {
+  const search = await myBookOneSearch(keyword);
+  if (search === null || search.length === 0) {
+    return null;
+  }
+
+  let products: Book[] = [];
+
+  if (getProductOneByOne) {
+    for await (const searchHit of search) {
+      const product = await myBookOneGetProduct(searchHit.productId);
+      if (product !== null) {
+        products.push(product);
+      }
+    }
+  } else {
+    products = await Promise.all(
+      search.map((searchHit) => myBookOneGetProduct(searchHit.productId))
+    );
+  }
+
+  return products;
+};
