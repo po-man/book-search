@@ -1,6 +1,6 @@
 import { esliteSearch } from './eslite-search';
 import { esliteGetProduct } from './eslite-get-product';
-import { Book } from 'src/types';
+import { Book, GetFirstPageProductsPipelineOptions } from 'src/types';
 
 export const esliteGetFirstProductPipeline = async (
   keyword: string
@@ -21,17 +21,19 @@ export const esliteGetFirstProductPipeline = async (
 
 export const esliteGetFirstPageProductsPipeline = async (
   keyword: string,
-  getProductOneByOne: boolean = true
+  options: GetFirstPageProductsPipelineOptions = {},
 ): Promise<Book[]> => {
+  const { getProductOneByOne = true, topK = 5 } = options;
   const search = await esliteSearch(keyword);
   if (search === null || search.length === 0) {
     return null;
   }
+  const topKSearch = search.slice(0, topK);
 
   let products: Book[] = [];
 
   if (getProductOneByOne) {
-    for await (const searchHit of search) {
+    for await (const searchHit of topKSearch) {
       const product = await esliteGetProduct(searchHit.productId);
       if (product !== null) {
         products.push(product);
@@ -39,7 +41,7 @@ export const esliteGetFirstPageProductsPipeline = async (
     }
   } else {
     products = await Promise.all(
-      search.map((searchHit) => esliteGetProduct(searchHit.productId))
+      topKSearch.map((searchHit) => esliteGetProduct(searchHit.productId))
     );
   }
 

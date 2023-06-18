@@ -1,6 +1,6 @@
 import { myBookOneSearch } from './my-book-one-search';
 import { myBookOneGetProduct } from './my-book-one-get-product';
-import { Book } from 'src/types';
+import { Book, GetFirstPageProductsPipelineOptions } from 'src/types';
 
 export const myBookOneGetFirstProductPipeline = async (
   keyword: string
@@ -21,17 +21,19 @@ export const myBookOneGetFirstProductPipeline = async (
 
 export const myBookOneGetFirstPageProductsPipeline = async (
   keyword: string,
-  getProductOneByOne: boolean = true
+  options: GetFirstPageProductsPipelineOptions = {},
 ): Promise<Book[]> => {
+  const { getProductOneByOne = true, topK = 5 } = options;
   const search = await myBookOneSearch(keyword);
   if (search === null || search.length === 0) {
     return null;
   }
+  const topKSearch = search.slice(0, topK);
 
   let products: Book[] = [];
 
   if (getProductOneByOne) {
-    for await (const searchHit of search) {
+    for await (const searchHit of topKSearch) {
       const product = await myBookOneGetProduct(searchHit.productId);
       if (product !== null) {
         products.push(product);
@@ -39,7 +41,7 @@ export const myBookOneGetFirstPageProductsPipeline = async (
     }
   } else {
     products = await Promise.all(
-      search.map((searchHit) => myBookOneGetProduct(searchHit.productId))
+      topKSearch.map((searchHit) => myBookOneGetProduct(searchHit.productId))
     );
   }
 

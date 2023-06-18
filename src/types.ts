@@ -20,3 +20,8 @@ export type Price = {
   amount?: number;
   isDiscounted?: boolean;
 };
+
+export type GetFirstPageProductsPipelineOptions = {
+  getProductOneByOne?: boolean;
+  topK?: number;
+};
